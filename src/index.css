@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body{
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "CyborgPunk";
+    src: local("CyborgPunk"),
+    url("./font/CyborgPunk.ttf") format("truetype");
+}
+.font-cyborg {
+    font-family: "CyborgPunk";
+}
+@font-face {
+    font-family: "Beyonders";
+    src: local("Beyonders"),
+    url("./font/Beyonders.ttf") format("truetype");
+}
+.font-beyonders {
+    font-family: "Beyonders";
+}
