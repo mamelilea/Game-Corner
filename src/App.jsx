@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     element:<Home></Home>,
   },
   {
-    path:"/gacor/booking",
+    path:"/gacor/book",
     element:<Book></Book>,
   },
   {

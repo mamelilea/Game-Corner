@@ -11,7 +11,7 @@ const navbar = () => {
             <ul className='flex flex-row text-2xl justify-between text-putih'>
                 <li className=' mx-8 hover:bg-biru px-2 py-1 rounded-3xl'><a href="/gacor/#about">About</a></li>
                 <li className=' mx-8 hover:bg-biru px-2 py-1 rounded-3xl'><a href="/gacor/#facility">Facility</a></li>
-                <li className=' mx-8 hover:bg-biru px-2 py-1 rounded-3xl'><a href="/gacor/booking">Book</a></li>
+                <li className=' mx-8 hover:bg-biru px-2 py-1 rounded-3xl'><a href="/gacor/book">Book</a></li>
                 <li className=' mx-8 hover:bg-biru px-2 py-1 rounded-3xl'><a href="/gacor/profile">Profile</a></li>
             </ul>
         </div>
