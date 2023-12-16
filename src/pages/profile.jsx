@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Component/navbar'
-import profile from '../assets/profile/profile.png'
+import profile from '../assets/profile/Profile.png'
 import Footer from '../Component/footer'
 
 const profile = () => {
