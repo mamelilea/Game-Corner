@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Component/navbar'
-import profile from '../assets/profile/Profile.png'
+import user from '../assets/profile/Profile.png'
 import Footer from '../Component/footer'
 
 const profile = () => {
@@ -10,7 +10,7 @@ const profile = () => {
             <div className='w-screen h-screen bg-abu  flex justify-center'>
                 <div className='w-[70rem] h-[30.5rem] bg-abu2 rounded-xl flex items-center'>
                     <div className='flex items-center justify-center h-full w-1/2'>
-                        <img src={profile} alt="" />
+                        <img src={user} alt="" />
                     </div>
                     <div className='w-1/2 flex flex-col h-52 leading-[4rem] justify-center pt-10'>
                         <p className='text-[2rem] font-semibold text-potih'>Nama &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: John Doe</p>
@@ -19,7 +19,7 @@ const profile = () => {
                         <a href="/login"><button className='w-[11.5rem] h-12 flex justify-center items-center mt-12 bg-ijo hover:bg-[#3c5249] text-potih font-bold rounded-md'> LOG OUT</button></a>
                     </div>
                 </div>
-                
+
             </div>
             <Footer></Footer>
         </div>
