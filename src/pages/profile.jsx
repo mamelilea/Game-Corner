@@ -16,7 +16,7 @@ const profile = () => {
                         <p className='text-[2rem] font-semibold text-potih'>Nama &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: John Doe</p>
                         <p className='text-[2rem] font-semibold text-potih'>NIM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 255170893708201</p>
                         <p className='text-[2rem] font-semibold text-potih'>Prodi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Teknologi Informasi</p>
-                        <a href="/login"><button className='w-[11.5rem] h-12 flex justify-center items-center mt-12 bg-ijo hover:bg-[#3c5249] text-potih font-bold rounded-md'> LOG OUT</button></a>
+                        <a href="/game-corner/login"><button className='w-[11.5rem] h-12 flex justify-center items-center mt-12 bg-ijo hover:bg-[#3c5249] text-potih font-bold rounded-md'> LOG OUT</button></a>
                     </div>
                 </div>
 

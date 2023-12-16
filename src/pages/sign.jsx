@@ -14,7 +14,7 @@ const sign = () => {
                         <div className='mr-16 -mt-10 h-full flex flex-col justify-center absolute top-0'>
                             <h3 className='text-black text-xl font-bold text-center'>Already Sign Up?</h3>
                             <p className='text-putih opacity-70 text-[0.875rem] w-56 mx-auto text-center font-semibold mt-9'>Log in to your account so you can continue your activity.</p>
-                            <a href="/login"><button className='w-48 h-9 border-2 text-center text-potih border-potih text-base font-semibold mt-7 hover:bg-[#3c5249] hover:border-0 ml-4'>LOG IN</button></a>
+                            <a href="/game-corner/login"><button className='w-48 h-9 border-2 text-center text-potih border-potih text-base font-semibold mt-7 hover:bg-[#3c5249] hover:border-0 ml-4'>LOG IN</button></a>
                         </div>
                     </div>
                     <div className='w-[40rem] pl-16'>

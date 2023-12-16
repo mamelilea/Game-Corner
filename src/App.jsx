@@ -20,23 +20,23 @@ import ErrorPage from './pages/errorPage';
 
 const router = createBrowserRouter([
   {
-    path:"/",
+    path:"/game-corner/",
     element:<Home></Home>,
   },
   {
-    path:"/book",
+    path:"/game-corner/book",
     element:<Book></Book>,
   },
   {
-    path:"/profile",
+    path:"/game-corner/profile",
     element:<Profile></Profile>,
   },
   {
-    path:"/login",
+    path:"/game-corner/login",
     element:<Login></Login>,
   },
   {
-    path:"/sign",
+    path:"/game-corner/sign",
     element:<Sign></Sign>,
   },
   {
