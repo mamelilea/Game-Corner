@@ -19,6 +19,7 @@ const profile = () => {
                         <a href="/login"><button className='w-[11.5rem] h-12 flex justify-center items-center mt-12 bg-ijo hover:bg-[#3c5249] text-potih font-bold rounded-md'> LOG OUT</button></a>
                     </div>
                 </div>
+                
             </div>
             <Footer></Footer>
         </div>
