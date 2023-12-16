@@ -20,27 +20,27 @@ import ErrorPage from './pages/errorPage';
 
 const router = createBrowserRouter([
   {
-    path:"/gacor/",
+    path:"/",
     element:<Home></Home>,
   },
   {
-    path:"/gacor/book",
+    path:"/book",
     element:<Book></Book>,
   },
   {
-    path:"/gacor/profile",
+    path:"/profile",
     element:<Profile></Profile>,
   },
   {
-    path:"/gacor/login",
+    path:"/login",
     element:<Login></Login>,
   },
   {
-    path:"/gacor/sign",
+    path:"/sign",
     element:<Sign></Sign>,
   },
   {
-    path:"/gacor/*",
+    path:"*",
     element:<ErrorPage></ErrorPage>,
   },
 ]);
