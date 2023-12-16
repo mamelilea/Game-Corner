@@ -15,7 +15,7 @@ const login = () => {
                         <div className='mr-16 -mt-10 h-full flex flex-col justify-center absolute top-0'>
                             <h3 className='text-black text-xl font-bold'>Don’t have an account?</h3>
                             <p className='text-putih opacity-70 text-[0.875rem] w-56 text-center font-semibold mt-9'>Sign Up so you can continue your activity.</p>
-                            <a href="/game-corner/sign"><button className='w-48 h-9 border-2 text-center text-potih border-potih text-base font-semibold mt-7 ml-3 hover:bg-[#3c5249] hover:border-0'>SIGN UP</button></a>
+                            <a href="/gacor/sign"><button className='w-48 h-9 border-2 text-center text-potih border-potih text-base font-semibold mt-7 ml-3 hover:bg-[#3c5249] hover:border-0'>SIGN UP</button></a>
                         </div>
                     </div>
                     <div className='w-[40rem] pl-16'>
