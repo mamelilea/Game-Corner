@@ -40,7 +40,7 @@ const router = createBrowserRouter([
     element:<Sign></Sign>,
   },
   {
-    path:"*",
+    path:"/gacor/*",
     element:<ErrorPage></ErrorPage>,
   },
 ]);
