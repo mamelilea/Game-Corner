@@ -9,10 +9,10 @@ const navbar = () => {
         </div>
         <div>
             <ul className='flex flex-row text-2xl justify-between text-putih'>
-                <li className=' mx-8 hover:bg-biru px-2 py-1 rounded-xl'><a href="/#about">About</a></li>
-                <li className=' mx-8 hover:bg-biru px-2 py-1 rounded-xl'><a href="/#facility">Facility</a></li>
-                <li className=' mx-8 hover:bg-biru px-2 py-1 rounded-xl'><a href="/book">Book</a></li>
-                <li className=' mx-8 hover:bg-biru px-2 py-1 rounded-xl'><a href="/profile">Profile</a></li>
+                <li className=' mx-8 hover:bg-ijo px-2 py-1 rounded-md'><a href="/#about">About</a></li>
+                <li className=' mx-8 hover:bg-ijo px-2 py-1 rounded-md'><a href="/#facility">Facility</a></li>
+                <li className=' mx-8 hover:bg-ijo px-2 py-1 rounded-md'><a href="/book">Book</a></li>
+                <li className=' mx-8 hover:bg-ijo px-2 py-1 rounded-md'><a href="/profile">Profile</a></li>
             </ul>
         </div>
     </div>
