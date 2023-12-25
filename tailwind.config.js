@@ -7,6 +7,8 @@ export default {
   theme: {
     extend: {},
     colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
       abu: '#393E46',
       ijo: '#6D9886',
       biru: '#2C76E5',

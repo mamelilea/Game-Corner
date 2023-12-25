@@ -4,6 +4,18 @@
 html, body{
     overflow-x: hidden;
 }
+
+.navbar-list {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .navbar-list.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
 @font-face {
     font-family: "CyborgPunk";
     src: local("CyborgPunk"),

@@ -8,11 +8,21 @@ const profile = () => {
         <div className='pt-36 bg-abu'>
             <Navbar className='relative'></Navbar>
             <div className='w-screen h-screen bg-abu  flex justify-center'>
-                <div className='w-[70rem] h-[30.5rem] bg-abu2 rounded-xl flex items-center'>
-                    <div className='flex items-center justify-center h-full w-1/2'>
+                <div className='lg:w-[70rem] w-80 h-[30.5rem] bg-abu2 rounded-xl lg:flex  lg:items-center lg:flex-row flex flex-col items-center relative'>
+                    <div className='flex items-center lg:justify-center h-full lg:w-1/2 w-[8.4rem] lg:-mt-0 relative lg:top-0 -top-32'>
                         <img src={user} alt="" />
                     </div>
-                    <div className='w-1/2 flex flex-col h-52 leading-[4rem] justify-center pt-10'>
+                    <div className='lg:hidden flex relative'>
+                        <div>
+                            <h3 className='text-potih font-semibold text-lg'>Nama</h3>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div className='w-1/2 lg:flex flex-col h-52 leading-[4rem] justify-center pt-10 hidden lg:relative absolute'>
                         <p className='text-[2rem] font-semibold text-potih'>Nama &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: John Doe</p>
                         <p className='text-[2rem] font-semibold text-potih'>NIM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 255170893708201</p>
                         <p className='text-[2rem] font-semibold text-potih'>Prodi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Teknologi Informasi</p>

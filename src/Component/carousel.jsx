@@ -43,23 +43,21 @@ const carousel = () => {
     return (
         <div>
             <Carousel showDots={true}
-                removeArrowOnDeviceType={["tablet", "mobile"]} responsive={responsive} className='w-[100vw] h-[16.75rem] mx-6'>
-                <div className='w-52 h-64'><img src={fifa23} alt="" /></div>
-                <div className='w-52 '><img src={f1} alt="" /></div>
-                <div className='w-52 h-64'><img src={cod} alt="" /></div>
-                <div className='w-52 h-64'><img src={forza} alt="" /></div>
-                <div className='w-52 h-64'><img src={gran} alt="" /></div>
-                <div className='w-52 h-64'><img src={gow} alt="" /></div>
-                <div className='w-52 h-64'><img src={nba} alt="" /></div>
-                <div className='w-52 h-64'><img src={spiderman} alt="" /></div>
-                <div className='w-52 h-64'><img src={tekken} alt="" /></div>
-                <div className='w-52 h-64'><img src={gta} alt="" /></div>
-                <div className='w-52 h-64'><img src={hitman} alt="" /></div>
-                <div className='w-52 h-64'><img src={re} alt="" /></div>
-                <div className='w-52 h-64'><img src={gears} alt="" /></div>
-                <div className='w-52 h-64'><img src={assassin} alt="" /></div>
-
-
+                removeArrowOnDeviceType={["tablet"]} responsive={responsive} className='w-[100vw] h-[16.75rem] lg:-mx-1 '>
+                <div className='mx-auto w-52 h-64'><img src={fifa23} alt="" /></div>
+                <div className='mx-auto w-52 '><img src={f1} alt="" /></div>
+                <div className='mx-auto w-52 h-64'><img src={cod} alt="" /></div>
+                <div className='mx-auto w-52 h-64'><img src={forza} alt="" /></div>
+                <div className='mx-auto w-52 h-64'><img src={gran} alt="" /></div>
+                <div className='mx-auto w-52 h-64'><img src={gow} alt="" /></div>
+                <div className='mx-auto w-52 h-64'><img src={nba} alt="" /></div>
+                <div className='mx-auto w-52 h-64'><img src={spiderman} alt="" /></div>
+                <div className='mx-auto w-52 h-64'><img src={tekken} alt="" /></div>
+                <div className='mx-auto w-52 h-64'><img src={gta} alt="" /></div>
+                <div className='mx-auto w-52 h-64'><img src={hitman} alt="" /></div>
+                <div className='mx-auto w-52 h-64'><img src={re} alt="" /></div>
+                <div className='mx-auto w-52 h-64'><img src={gears} alt="" /></div>
+                <div className='mx-auto w-52 h-64'><img src={assassin} alt="" /></div>
             </Carousel>
         </div>
     )
