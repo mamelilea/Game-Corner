@@ -14,7 +14,7 @@ const book = () => {
         setSelectedTime(time);
     };
     return (
-        <>
+        <> 
             <Navbar></Navbar>
             <div className='pt-36 bg-abu'>
                 <div className='w-screen lg:h-[55rem] h-[60rem] bg-abu flex flex-col items-center'>
