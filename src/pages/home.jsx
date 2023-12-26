@@ -34,7 +34,7 @@ const home = () => {
             </button>
           </div>
         </div>
-        <div className="w-[50%]">
+        <div className="w-[50%] overflow-x-hidden">
           <img src={satu} alt="" className="absolute mt-14  right-[16.5rem] hidden lg:block"/>
           <img src={satu} alt="" className="w-[5rem] absolute top-[30rem]  right-[8rem] lg:hidden"/>
           <img src={dua} alt="" className="absolute mt-[20rem] right-[30rem] hidden lg:block"/>
