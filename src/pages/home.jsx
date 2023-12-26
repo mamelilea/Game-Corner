@@ -12,7 +12,7 @@ import Footer from "../Component/footer";
 
 const home = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
     <Navbar></Navbar>
       <div className="mt-28 bg-abu w-screen lg:flex lg:flex-row flex flex-col justify-around lg:h-[51rem] h-[44rem] overflow-hidden">
         <div className="mt-16 w-[50%]">
@@ -48,7 +48,8 @@ const home = () => {
       <About></About>
       <Facility></Facility>
       <Footer></Footer>
-    </>
+      </div>
+
   );
 };
 
