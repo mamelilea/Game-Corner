@@ -5,6 +5,12 @@ html, body{
     overflow-x: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+    html, body{
+        overflow-x: hidden;
+    }
+  }
+
 .navbar-list {
     transform: translateX(100%);
     opacity: 0;
