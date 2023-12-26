@@ -14,7 +14,7 @@ const home = () => {
   return (
     <div className="overflow-x-hidden">
     <Navbar></Navbar>
-      <div className="mt-28 bg-abu w-screen lg:flex lg:flex-row flex flex-col justify-around lg:h-[51rem] h-[44rem] overflow-hidden">
+      <div className="mt-28 bg-abu w-screen lg:flex lg:flex-row flex flex-col justify-around lg:h-[51rem] h-[44rem]">
         <div className="mt-16 w-[50%]">
           <img src={abstrak} alt="" className="absolute lg:-left-[18rem] lg:w-[62.5rem] lg:h-[45rem] hidden lg:block" />
           <img src={abstrak2} alt="" className="absolute lg:hidden w-[20.2rem] h-[25.8rem] top-[5.6rem] "/>
