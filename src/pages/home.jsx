@@ -14,7 +14,7 @@ const home = () => {
   return (
     <div className="overflow-x-hidden">
     <Navbar></Navbar>
-      <div className="mt-28 bg-abu w-screen lg:flex lg:flex-row flex flex-col justify-around lg:h-[51rem] h-[44rem]">
+      <div className="mt-28 bg-abu w-screen lg:flex lg:flex-row flex flex-col justify-around lg:h-[51rem] h-[44rem] overflow-x-hidden">
         <div className="mt-16 w-[50%]">
           <img src={abstrak} alt="" className="absolute lg:-left-[18rem] lg:w-[62.5rem] lg:h-[45rem] hidden lg:block" />
           <img src={abstrak2} alt="" className="absolute lg:hidden w-[20.2rem] h-[25.8rem] top-[5.6rem] "/>
@@ -40,7 +40,7 @@ const home = () => {
           <img src={dua} alt="" className="absolute mt-[20rem] right-[30rem] hidden lg:block"/>
           <img src={dua} alt="" className="absolute top-[37rem] right-[14rem] w-6"/>
           <img src={tiga} alt="" className="absolute lg:w-52 w-[4rem] lg:mt-[36rem] lg:top-28 top-[45rem] lg:right-[30rem] right-[13rem]"/>
-          <img src={ps} alt="" className="absolute lg:-right-[23.7rem] lg:w-[60rem] lg:h-[50rem] lg:mt-[2rem] lg:top-26 -right-[9rem] w-[35rem] hidden lg:block" />
+          <img src={ps} alt="" className="overflow-x-hidden absolute lg:-right-[23.7rem] lg:w-[60rem] lg:h-[50rem] lg:mt-[2rem] lg:top-26 -right-[9rem] w-[35rem] hidden lg:block" />
           <img src={ps} alt="" className="absolute lg:-right-[23.7rem] lg:w-[60rem] lg:h-[50rem] lg:mt-[2rem] lg:top-26 top-[28rem] lg:hidden -right-[9rem] w-[35rem]" />
         </div>
 
