@@ -5,6 +5,7 @@ import satu from "../assets/home/1.png"
 import dua from '../assets/home/2.png'
 import tiga from '../assets/home/3.png'
 import ps from "../assets/home/ps4.png";
+import ps4mobile from "../assets/home/ps4-mobile.png";
 import Navbar from "../Component/navbar";
 import About from "./about";
 import Facility from "./facility";
@@ -12,9 +13,9 @@ import Footer from "../Component/footer";
 
 const home = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="">
     <Navbar></Navbar>
-      <div className="mt-28 bg-abu w-screen lg:flex lg:flex-row flex flex-col justify-around lg:h-[51rem] h-[44rem] overflow-x-hidden">
+      <div className="mt-28 bg-abu w-screen lg:flex lg:flex-row flex flex-col justify-around lg:h-[51rem] h-[44rem]">
         <div className="mt-16 w-[50%]">
           <img src={abstrak} alt="" className="absolute lg:-left-[18rem] lg:w-[62.5rem] lg:h-[45rem] hidden lg:block" />
           <img src={abstrak2} alt="" className="absolute lg:hidden w-[20.2rem] h-[25.8rem] top-[5.6rem] "/>
@@ -34,14 +35,17 @@ const home = () => {
             </button>
           </div>
         </div>
-        <div className="w-[50%] overflow-x-hidden">
+        <div className="w-[50%]">
           <img src={satu} alt="" className="absolute mt-14  right-[16.5rem] hidden lg:block"/>
           <img src={satu} alt="" className="w-[5rem] absolute top-[30rem]  right-[8rem] lg:hidden"/>
           <img src={dua} alt="" className="absolute mt-[20rem] right-[30rem] hidden lg:block"/>
           <img src={dua} alt="" className="absolute top-[37rem] right-[14rem] w-6"/>
           <img src={tiga} alt="" className="absolute lg:w-52 w-[4rem] lg:mt-[36rem] lg:top-28 top-[45rem] lg:right-[30rem] right-[13rem]"/>
-          <img src={ps} alt="" className="overflow-x-hidden absolute lg:-right-[23.7rem] lg:w-[60rem] lg:h-[50rem] lg:mt-[2rem] lg:top-26 -right-[9rem] w-[35rem] hidden lg:block" />
-          <img src={ps} alt="" className="absolute lg:-right-[23.7rem] lg:w-[60rem] lg:h-[50rem] lg:mt-[2rem] lg:top-26 top-[28rem] lg:hidden -right-[9rem] w-[35rem]" />
+          <img src={ps} alt="" className="absolute lg:-right-[23.7rem] lg:w-[60rem] lg:h-[50rem] lg:mt-[2rem] lg:top-26 hidden lg:block" />
+          {/* versi mobile */}
+          <div className="h-[24.3rem] w-[28rem] top-[27rem] absolute -right-[0rem]">
+          <img src={ps4mobile} alt="" className=" relative   lg:hidden  -right-[11.3rem]" />
+          </div>
         </div>
 
       </div>
