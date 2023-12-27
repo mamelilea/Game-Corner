@@ -5,14 +5,77 @@ import CarouselDate from '../Component/carouselDate';
 
 
 const book = () => {
-    const [selectedDate, setSelectedDate] = useState('');
+    const getCurrentMonthYear = () => {
+        const currentDate = new Date();
+        const options = { month: 'long', year: 'numeric' };
+        return currentDate.toLocaleDateString('en-US', options);
+    };
 
-    const changeColor = (day) => { setSelectedDate(day); };
+    const [selectedDate, setSelectedDate] = useState('');
+    const [userName, setUserName] = useState('John Doe');
+    const [userNIM, setUserNIM] = useState('255170893708201');
+
+
+    const changeColor = (day) => {
+        setSelectedDate(day);
+        updateVerificationTable();
+    };
     const [selectedTime, setSelectedTime] = useState('');
 
     const changeColorTime = (time) => {
         setSelectedTime(time);
+        updateVerificationTable();
     };
+
+    const updateVerificationTable = () => {
+        setUserName('John Doe');
+        setUserNIM('255170893708201');
+    };
+
+    const getFullDate = (day) => {
+
+        switch (day) {
+            case 'SUN':
+                return 'Sunday';
+            case 'MON':
+                return 'Monday';
+            case 'TUE':
+                return 'Tuesday';
+            case 'WED':
+                return 'Wednesday';
+            case 'THU':
+                return 'Thursday';
+            case 'FRI':
+                return 'Friday';
+            case 'SAT':
+                return 'Saturday';
+            default:
+                return '';
+        }
+    };
+    const getFullTime = (time) => {
+        switch (time) {
+            case '1':
+                return '08.00 - 09.00 AM';
+            case '2':
+                return '09.15 - 10.15 AM';
+            case '3':
+                return '10.30 - 11.30 AM';
+            case '4':
+                return '11.45 - 12.45 PM';
+            case '5':
+                return '01.00 - 02.00 PM';
+            case '6':
+                return '02.15 - 03.15 PM';
+            case '7':
+                return '03.30 - 04.30 PM';
+            case '8':
+                return '04.45 - 05.45 PM';
+            default:
+                return '';
+        }
+    };
+
     return (
         <>
             <Navbar></Navbar>
@@ -28,7 +91,7 @@ const book = () => {
                             </h3>
                             <div className='lg:w-[.5rem] w-1.5 lg:h-[.5rem] h-1.5 rounded-full bg-[#D9D9D9] '></div>
                             <h3 className='text-potih lg:text-xl text-xs font-bold opacity-50'>
-                                Januari 2024
+                                {getCurrentMonthYear()}
                             </h3>
                         </div>
                         {/* kalender nya */}
@@ -90,8 +153,9 @@ const book = () => {
                                 </div>
                             </div>
                         </div>
+                        {/* kalender versi mobile */}
                         <div className='lg:hidden relative -mt-1 -mb-5'>
-                            <CarouselDate className='absolute'></CarouselDate>
+                            <CarouselDate selectedDate={selectedDate} changeColor={changeColor} className='absolute'></CarouselDate>
                         </div>
                         <hr className='w-[95%] text-potih opacity-30 mt-10' />
                         {/* jam nya */}
@@ -114,12 +178,22 @@ const book = () => {
                             Your Order Details
                         </h2>
                         <hr className='w-[35%] text-potih opacity-30 mt-5' />
+
                         <div className='grid lg:grid-cols-2 grid-cols-none lg:grid-rows-none grid-rows-4 mt-7 gap-y-3'>
-                            <h3 className='lg:order-none order-1 text-potih lg:text-xl text-xs font-semibold '>Date: Sunday  December 4, 2023</h3>
-                            <h3 className='lg:order-none order-3 text-potih lg:text-xl text-xs font-semibold lg:mt-0 mt-1'>Name       : John Doe</h3>
-                            <h3 className='lg:order-none order-2 text-potih lg:text-xl text-xs font-semibold lg:mt-0 -mt-1'>Time: 09.15 - 10. 15 AM</h3>
-                            <h3 className='lg:order-none order-4 text-potih lg:text-xl text-xs font-semibold '>NIM           : 255170893708201</h3>
+                            <h3 className='lg:order-none order-1 text-potih lg:text-xl text-xs font-semibold'>
+                                Date: {getFullDate(selectedDate)}
+                            </h3>
+                            <h3 className='lg:order-none order-3 text-potih lg:text-xl text-xs font-semibold lg:mt-0 mt-1'>
+                                Name: {userName}
+                            </h3>
+                            <h3 className='lg:order-none order-2 text-potih lg:text-xl text-xs font-semibold lg:mt-0 -mt-1'>
+                                Time: {getFullTime(selectedTime)}
+                            </h3>
+                            <h3 className='lg:order-none order-4 text-potih lg:text-xl text-xs font-semibold'>
+                                NIM: {userNIM}
+                            </h3>
                         </div>
+
                         <button className=' text-sm font-bold w-44 h-12 bg-biru hover:bg-[#1e3454] rounded-sm mt-7 text-potih'>
                             CONFIRM ORDER
                         </button>

@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-const carouselDate = () => {
+const carouselDate = (props) => {
+    const { selectedDate = '', changeColor } = props;
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -25,19 +26,14 @@ const carouselDate = () => {
             slidesToSlide: 3
         },
     };
-    const [selectedDate, setSelectedDate] = useState('');
 
-    const changeColor = (day) => { setSelectedDate(day); };
-
-    const changeColorTime = (time) => {
-        setSelectedTime(time);
-    };
+    
     return (
         <div className='w-[100%]'>
             <Carousel showDots={true}
                 removeArrowOnDeviceType={["tablet", "mobile"]} responsive={responsive} className='w-[70vw] h-[7rem] flex items-center'>
                 {/* kalendernya */}
-                <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center${selectedDate === 'SUN' ? ' bg-biru' : ''}`} onClick={() => changeColor('SUN')}>
+                <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center${props.selectedDate === 'SUN' ? ' bg-biru' : ''}`} onClick={() => props.changeColor('SUN')}>
                                 <div className='text-potih lg:text-base text-xs font-bold'>
                                     SUN
                                 </div>
@@ -45,7 +41,7 @@ const carouselDate = () => {
                                     4
                                 </div>
                             </div>
-                            <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center${selectedDate === 'MON' ? ' bg-biru' : ''}`} onClick={() => changeColor('MON')}>
+                            <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center${props.selectedDate === 'MON' ? ' bg-biru' : ''}`} onClick={() => props.changeColor('MON')}>
                                 <div className='text-potih lg:text-base text-xs font-bold'>
                                     MON
                                 </div>
@@ -53,7 +49,7 @@ const carouselDate = () => {
                                     5
                                 </div>
                             </div>
-                            <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center${selectedDate === 'TUE' ? ' bg-biru' : ''}`} onClick={() => changeColor('TUE')}>
+                            <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center${props.selectedDate === 'TUE' ? ' bg-biru' : ''}`} onClick={() => props.changeColor('TUE')}>
                                 <div className='text-potih lg:text-base text-xs font-bold'>
                                     TUE
                                 </div>
@@ -61,7 +57,7 @@ const carouselDate = () => {
                                     6
                                 </div>
                             </div>
-                            <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center${selectedDate === 'WED' ? ' bg-biru' : ''}`} onClick={() => changeColor('WED')}>
+                            <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center${props.selectedDate === 'WED' ? ' bg-biru' : ''}`} onClick={() => props.changeColor('WED')}>
                                 <div className='text-potih lg:text-base text-xs font-bold'>
                                     WED
                                 </div>
@@ -69,7 +65,7 @@ const carouselDate = () => {
                                     7
                                 </div>
                             </div>
-                            <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center${selectedDate === 'THU' ? ' bg-biru' : ''}`} onClick={() => changeColor('THU')}>
+                            <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center${props.selectedDate === 'THU' ? ' bg-biru' : ''}`} onClick={() => props.changeColor('THU')}>
                                 <div className='text-potih lg:text-base text-xs font-bold'>
                                     THU
                                 </div>
@@ -77,7 +73,7 @@ const carouselDate = () => {
                                     8
                                 </div>
                             </div>
-                            <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center ${selectedDate === 'FRI' ? ' bg-biru' : ''}`} onClick={() => changeColor('FRI')}>
+                            <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center ${props.selectedDate === 'FRI' ? ' bg-biru' : ''}`} onClick={() => props.changeColor('FRI')}>
                                 <div className='text-potih lg:text-base text-xs font-bold'>
                                     FRI
                                 </div>
@@ -85,7 +81,7 @@ const carouselDate = () => {
                                     9
                                 </div>
                             </div>
-                            <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center ${selectedDate === 'SAT' ? ' bg-biru' : ''}`} onClick={() => changeColor('SAT')}>
+                            <div className={`  active:bg-biru hover:cursor-pointer lg:w-[7.25rem] w-[4.6rem] lg:h-[6.5rem] h-[4.5rem] rounded-lg bg-abu3 flex flex-col items-center justify-center ${props.selectedDate === 'SAT' ? ' bg-biru' : ''}`} onClick={() => props.changeColor('SAT')}>
                                 <div className='text-potih lg:text-base text-xs font-bold'>
                                     SAT
                                 </div>
