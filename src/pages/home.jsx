@@ -43,7 +43,7 @@ const home = () => {
           <img src={tiga} alt="" className="absolute lg:w-52 w-[4rem] lg:mt-[36rem] lg:top-28 top-[45rem] lg:right-[30rem] right-[13rem]"/>
           <img src={ps} alt="" className="absolute lg:-right-[23.7rem] lg:w-[60rem] lg:h-[50rem] lg:mt-[2rem] lg:top-26 hidden lg:block" />
           {/* versi mobile */}
-          <div className="h-[24.3rem] w-[28rem] top-[27rem] absolute -right-[0rem]">
+          <div className="h-[24.3rem] w-[27rem] top-[27rem] absolute -right-[0rem] overflow-hidden">
           <img src={ps4mobile} alt="" className=" relative   lg:hidden  -right-[11.27rem]" />
           </div>
         </div>
