@@ -32,10 +32,10 @@ const carouselFacility = () => {
     <div>
       <Carousel showDots={true}
                 removeArrowOnDeviceType={["tablet", "mobile"]} responsive={responsive} className='w-[100vw] h-[16.75rem] flex items-center'>
-                <div className='mx-auto w-[21rem] h-[15rem] bottom-6 relative'><img src={pump} alt="" /></div>
-                <div className='mx-auto w-[21rem] h-[15rem] bottom-5 relative'><img src={xbox} alt="" /></div>
+                <div className='mx-auto w-[21.5rem] h-[15rem] bottom-7 relative'><img src={pump} alt="" /></div>
+                <div className='mx-auto w-[21.7rem] h-[15rem] bottom-5 relative'><img src={xbox} alt="" /></div>
                 <div className='mx-auto w-[21rem] h-[15rem] '><img src={ps5} alt="" /></div>
-                <div className='mx-auto w-[21rem] h-[15rem] '><img src={rog} alt="" /></div>
+                <div className='mx-auto w-[20.7rem] h-[15rem] '><img src={rog} alt="" /></div>
             </Carousel>
     </div>
   )
