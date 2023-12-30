@@ -10,21 +10,28 @@ import Navbar from "../Component/navbar";
 import About from "./about";
 import Facility from "./facility";
 import Footer from "../Component/footer";
+import { Typewriter } from "react-simple-typewriter"
+
 
 const home = () => {
   return (
     <div className="">
     <Navbar></Navbar>
       <div className="mt-28 bg-abu w-screen lg:flex lg:flex-row flex flex-col justify-around lg:h-[51rem] h-[44rem]">
-        <div className="mt-16 w-[50%]">
+        <div className="lg:mt-6 w-[50%]">
           <img src={abstrak} alt="" className="absolute lg:-left-[18rem] lg:w-[62.5rem] lg:h-[45rem] hidden lg:block" />
           <img src={abstrak2} alt="" className="absolute lg:hidden w-[20.2rem] h-[25.8rem] top-[5.6rem] "/>
-          <div className="lg:left-20 left-[3.25rem] lg:top-[19.5rem] top-[8.5rem] absolute">
-            <h1 className="font-beyonders text-[#F7F7F7] lg:text-[4rem] text-[1.5rem] mb-4">WELCOME</h1>
-            <h2 className="font-beyonders text-[#F7F7F7] lg:text-[2.25rem] text-[1rem] mb-4">
-              TO FILKOM'S</h2>
-            <h2 className="font-beyonders text-[#F7F7F7] lg:text-[2.25rem] text-[1rem] mb-5">
-              GAME CORNER</h2>
+          <div className="lg:-mt-6 lg:left-20 left-[3.25rem] lg:top-[19.5rem] top-[8.5rem] absolute">
+            <span className="font-beyonders text-[#F7F7F7] lg:text-[4rem] text-[1.5rem] mb-4 block">
+              <Typewriter words={['WELCOME']} typeSpeed={200} delaySpeed={1000}/>
+              </span>
+            <span data-aos="fade-left" data-aos-delay="1500" data-aos-duration="800" className="font-beyonders text-[#F7F7F7] lg:text-[2.25rem] text-[1rem] mb-4 block">
+            TO FILKOM'S
+              
+            </span>
+            <span data-aos="fade-right" data-aos-delay="1500" data-aos-duration="800" className="font-beyonders text-[#F7F7F7] lg:text-[2.25rem] text-[1rem] mb-5 block">
+              GAME CORNER
+              </span>
             <p className="text-[#F7F7F7] lg:text-base text-[0.6rem] font-semibold lg:w-[28rem] w-[13.25rem] text-justify lg:h-[7rem] h-[4.1rem]">
               Fasilitas yang dirancang khusus untuk mahasiswa Fakultas Ilmu
               Komputer, Universitas Brawijaya! Hasil kolaborasi dengan Bank Rakyat
@@ -35,7 +42,7 @@ const home = () => {
             </button>
           </div>
         </div>
-        <div className="w-[50%]">
+        <div className="w-[50%] lg:-mt-6">
           <img src={satu} alt="" className="absolute mt-14  right-[16.5rem] hidden lg:block"/>
           <img src={satu} alt="" className="w-[5rem] absolute top-[30rem]  right-[8rem] lg:hidden"/>
           <img src={dua} alt="" className="absolute mt-[20rem] right-[30rem] hidden lg:block"/>
